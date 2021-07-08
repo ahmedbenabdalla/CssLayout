@@ -1,0 +1,422 @@
+/*@media(min-width: 300px) and (max-width: 1200px)  {*/
+/***************ma5doum bel talle *******/    
+body{
+  
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+ }
+.main{
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+
+/*******************************************nav bar************************************************/
+
+
+.menu{
+    margin-left: 420px;
+}
+.menu #list{/*li*/
+    display: inline;
+    margin-left: 10px;
+}
+.menu li a{
+    text-decoration: none;  
+    color:darkgray;
+    font-family:Roboto; 
+    font-size: 16px;
+ }
+ .menu li a:hover{
+     color:#00b39b;
+}
+
+.image .logo {
+    width: 268px;
+    height: 33px;
+   
+}
+.nav {
+    z-index: 1;
+    position: fixed;/*sticky ne marche pas*/
+    display: flex ;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    background-color:white;
+    width:100%;
+    margin-left: 0px;
+    justify-content: center;
+}
+#navtext{
+    
+    font-family:Work_Sans; 
+    color:#00b39b;
+    font-size: 2.125rem;
+    
+}
+.not-top {
+        box-shadow:  0 1px rgba(0, 0, 0, 0.1);
+        
+ }
+
+.content-display{/*parent de la liste departments*/
+    position: relative;
+}
+  .content-display:hover .dropdown-content {
+     display: block;
+     position: absolute;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     line-height: 2;
+     list-style: none;
+     margin-top: none;
+     
+  }
+.dropdown-content{
+    display: none;
+    
+    background-color:white;
+    
+}
+.dropdown-content li{
+    width: 100%;
+    text-align: left;
+}
+.dropdown-content li a{/*mouch mrigla lazem narj3elha*/
+    
+    text-align: left;
+}
+/***************************************illi taht nav****************/
+.logo-1{
+    padding-top: 100px;
+    text-align: center;
+ 
+ }
+.p1{
+    margin-right: 5px;
+}
+.p2{
+    margin-left: 8px;
+    margin-right: 0px;
+}
+
+.explaining{ /*p1 et p2*/
+    display: flex;
+    justify-content: space-between;/*ne marche pas*/
+}
+.explaining p{
+    line-height: 1.75;
+    font-weight: 400;
+    font-family: Roboto;
+    color:darkgray;
+    
+}
+
+
+/**********************************Patient ,Doctor and clinics **********************************/
+.select{/*box of pateint , doctors and clinics*/
+    height: 345px;
+    display: flex; 
+    margin-top: 50px;
+    
+}
+
+
+.patient{
+    background: #00ccb1 ;
+    margin-right: 20px;
+    width: 33.33%;
+    padding:35px 35px 35px;
+    border-radius: 15px;
+}
+.doctors{
+    background: #3d83df;
+    margin-right: 20px;
+    width: 33.33%;
+    padding:35px 35px 35px;
+    border-radius: 15px;
+}
+.clinics
+{
+    background: #1b2734;
+    width: 33.33%;
+    padding:35px 35px 35px;
+    border-radius: 15px;
+}
+
+.patient h1,.doctors h1,.clinics h1{
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+    margin: .3em 0;
+    font-family: "Work Sans", Arial, sans-serif;
+    line-height: 33.8px;
+} 
+.patient h2,.doctors h2,.clinics h2{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28.8px;
+    letter-spacing: -0.3px;
+    margin: 0;
+    color: #fff;
+    font-family: "Work_Sans", Arial, sans-serif;
+    font-weight: 300;
+    text-decoration: none solid rgb(255,255,255);
+} 
+
+.choose{/*liste*/
+    
+    background: none;
+    background-color: transparent;
+    font-family: "Roboto", Arial, sans-serif;
+    border: 0;
+    Font-size: 19.2px;
+    text-decoration: underline solid rgb(255, 255, 255);
+    Font-weight: 400;
+    Line-height: 24.96px;
+    color: rgb(255, 255, 255);
+    
+    }
+    .choose option{
+        ;
+    }
+.main-select{/*liste de patient and doctors*/
+    padding-top:30%;
+  
+}
+.main-select-3{/*liste clinics*/
+    padding-top:20%;
+    padding-bottom: 10%;
+}
+
+/******************brands***********************/
+.brands{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.before-brands h1{
+    font-family: "Work_Sans-light", Arial, sans-serif;
+    Font-size: 26px;
+    Font-weight: 300;
+    line-height: 33.8px;
+    color: rgb(0, 179, 155);
+} 
+.before-brands{
+    width: 40%;
+}
+.brands-logo{
+    margin-top: 20px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+.brands-logo a{
+    margin-left: 25px;
+    
+}
+.brands-logo a svg {
+    height: 20px;
+    width: 140px;
+    fill: rgb(116, 116, 116);/*ne marche pas*/
+}
+.brands-logo a svg:hover {
+   
+    fill: rgb(0, 179, 155);/*ne marche pas*/
+}
+.brands-logo a img {
+    filter: grayscale(100%);
+}
+.brands-logo a img:hover {
+    filter: none;
+    
+}
+/******arja3 nathaf el code **********/
+/*****************************************************Content********************************************/
+.intr { grid-area: intr; }
+.selection1 { grid-area: selection1; 
+margin-top: 50px;
+float: center;}
+.selection2 { grid-area: selection2; 
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.content{
+    background-color: rgb(183, 240, 213);
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.content-introduce{
+    margin-left: 18%;
+    margin-right: 18%;
+}
+.introduce{
+    display: grid;
+    grid-template-areas:
+    'intr intr selection1 selection2 ';
+    grid-gap: 0px; 
+}
+#left{
+    margin-top: 70px;
+    margin-right: 110px;
+}
+#icon{
+    display: block;
+    margin: 0 auto;
+}
+.introduce h1{
+font-family: "Work_Sans-light", Arial, sans-serif;
+font-size: 34px;
+font-weight: 300;
+line-height: 44.2px;
+color: rgb(0, 179, 155);
+}
+.introduce .para p{
+font-family: "Roboto", Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+color: rgb(116, 116, 116);
+}
+.selection1-1,.selection1-2,.selection2-1,.selection2-2{
+    background-color: white;
+    width: 185px;
+    height: 210px;
+    margin-top: 5px;
+    padding: 20px 20px 20px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.selection-p{
+   font-family: "Roboto", Arial, sans-serif;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 16.9px;
+   color: rgb(116, 116, 116);
+   text-align: center;
+}
+.selection-h3{
+    font-family: "Work_Sans-light", Arial, sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 300;
+
+    line-height: 31.2px;
+
+ color: rgb(0, 179, 155);
+ text-align: center;
+}
+/**************************************************class=Improve-More********************************************/
+#Improve-More{
+    margin-top: 100px;
+    background-color: white;
+   
+}
+#Improve-More h1{
+font-family: "Work_Sans-light", Arial, sans-serif;
+
+font-size: 30px;
+
+font-weight: 300;
+
+line-height: 39px;
+
+color: rgb(0, 179, 155);
+text-align: center;
+}
+#Improve-More p{
+    font-family: "Roboto", Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 24px;
+
+color: rgb(116, 116, 116);
+text-align: center;
+}
+/**************************************************Cards****************************************************/
+
+#cards{
+    display: grid;
+    
+    grid-template-columns: auto auto auto ;
+    
+    grid-gap: 0px; 
+    margin-top: 80px;
+}
+.card { 
+    
+    margin-top: 15px;
+    width: 95%;
+    border-radius:6px; 
+    border: 0.3px solid lightgray;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card a{
+    text-decoration: none;
+}
+#btn{
+    background-color:#3D83DF;
+    border: none;
+    color: white;
+    height: 30px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 10px;
+    width: 120px;
+}
+.card a img {  
+    border-radius:6px 6px 0  0;
+}
+.image-card{
+    width: 100%;
+}
+.item1{grid-area: item1;
+    text-align: left;
+}
+.item2{grid-area: item2;
+    margin-top: 10%;
+    margin-left: 40%;
+    }
+.card-buttom{
+   display: grid;
+   grid-template-areas:
+    'item1 item2';
+   height: 60%;
+   margin-top: 0px;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+#card-p{
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgb(116, 116, 116);
+    text-decoration: none;
+}
+
+/**include**/
+@font-face {
+    font-family: "Roboto";
+    src: url("./Roboto/Roboto-Regular.ttf"); 
+}
+@font-face {
+    font-family: "Work_Sans";
+    src: url("./Work_Sans/static/WorkSans-ExtraLight.ttf");  
+}
+@font-face {
+    font-family: "Work_Sans-light";
+    src: url("./Work_Sans/static/WorkSans-Light.ttf");   
+}
+/*}
